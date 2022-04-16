@@ -1,0 +1,12 @@
+RESOURCES:
+	TestAfridiEC2:
+		Type: AWS::EC2::Instance
+                Properties:
+			ImageId:ami-0d2986f2e8c0f7d01
+			InstanceType:t2.micro
+
+	SecurityGroup:
+		Type: AWS::EC2::SecurityGroup
+		Properties:
+			SecurityGroupIngress:
+				SourceSecurityGroupId:sg-0f53b205829666807
