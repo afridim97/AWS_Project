@@ -1,12 +1,28 @@
-RESOURCES:
-	TestAfridiEC2:
-		Type: AWS::EC2::Instance
-                Properties:
-			ImageId:ami-0d2986f2e8c0f7d01
-			InstanceType:t2.micro
-
-	SecurityGroup:
-		Type: AWS::EC2::SecurityGroup
-		Properties:
-			SecurityGroupIngress:
-				SourceSecurityGroupId:sg-0f53b205829666807
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+    MyIpAddress:
+        Type: String
+        Description: My IP Address
+        
+Resources:
+    TestAfridiEC2:
+        Type: AWS::EC2::Instance
+        Properties:
+            ImageId: ami-0d2986f2e8c0f7d01
+            InstanceType: t2.micro
+            
+    SecurityGroup:
+        Type: AWS::EC2::SecurityGroup
+        Properties:
+            GroupDescription: "Allows ssh in only from my IP Address, and HTTP in from everywhere."
+            SecurityGroupIngress: 
+                - IpProtocol: tcp
+                  FromPort: 22
+                  ToPort: 22
+                  CidrIp: !Sub '${MyIpAddress}'
+                - IpProtocol: tcp
+                  FromPort: 80
+                  ToPort: 80
+                  CidrIp: 0.0.0.0/0  
+            
+            
