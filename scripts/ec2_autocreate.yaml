@@ -8,7 +8,7 @@ Resources:
     TestAfridiEC2:
         Type: AWS::EC2::Instance
         Properties:
-            ImageId: ami-0d2986f2e8c0f7d01
+            ImageId: ami-03e69d777fc469325
             InstanceType: t2.micro
             
     SecurityGroup:

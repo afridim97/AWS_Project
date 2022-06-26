@@ -1,0 +1,67 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+    MyIPAddress:
+        Type: String
+        Description: My IP Address
+    AMIId1:
+        Type: String
+        Description: AMI of the first instance
+    AMIId2:
+        Type: String
+        Description: AMI of the second instance
+Resources:
+    ELBSecurityGroup:
+        Type: AWS::EC2::SecurityGroup
+        Properties:
+            FromPort: 80
+            ToPort: 80
+            CidrIp: !Ref MyIPAddress
+   
+    EC2SecurityGroup:
+        Type: AWS::EC2::SecurityGroup
+        Properties:
+            SecurityGroupIngress:
+            - IpProtocol: tcp
+              FromPort: 80
+              ToPort: 80
+              CidrIp: !Ref MyIPAddress
+              SourceSecurityGroupId: !GetAtt ELBSecurityGroup.GroupId
+            - IpProtocol: tcp
+              FromPort: 22
+              ToPort: 22
+              CidrIp: !Ref MyIPAddress
+                  
+    EC2Instance1:
+        Type: AWS::EC2::Instance
+        Properties:
+            ImageId: !Ref AMIId1
+            AvailabilityZone: ap-south-1
+            SecurityGroups: !Ref EC2SecurityGroup
+            
+    EC2Instance2:
+        Type: AWS::EC2::Instance
+        Properties:
+            ImageId: !Ref AMIId2
+            AvailabilityZone: ap-south-2
+            SecurityGroups: !Ref EC2SecurityGroup
+            
+ # Load Balancer for EC2
+    MyLoadBalancerA:
+        Type: AWS::ElasticLoadBalancing::LoadBalancer
+        Properties:
+            AvailabilityZones: [ap-south-1,ap-south-2]
+            Instances:
+            - !Ref EC2Instance1
+            - !Ref EC2Instance2
+            Listeners:
+            - LoadBalancerPort: '80'
+              InstancePort: '80'
+              Protocol: HTTP
+            HealthCheck:
+                Target: HTTP:80/
+                HealthyThreshold: '3'
+                UnhealthyThreshold: '5'
+                Interval: '30'
+                Timeout: '5'
+            SecurityGroups:
+                - !GetAtt ELBSecurityGroup.GroupId

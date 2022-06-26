@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+    MyAMI:
+        Type: String
+        Default: ami-03e69d777fc469325
+        Description: Enter the AMI to use
+Resources:
+    myLaunchTemplate:
+        Type: AWS::EC2::LaunchTemplate
+        Properties:
+            ImageId: !Ref MyAMI
+            InstanceType: t2.micro
+    myServerGroup:
+        Type: AWS::AutoScaling::AutoScalingGroup
+        Properties:
+            AvailabilityZones: !GetAZs ''
+            LaunchTemplate:
+                LaunchTemplateId: !Ref myLaunchTemplate
+                Version: !GetAtt myLaunchTemplate.LatestVersionNumber
+            MaxSize: '2'
+            MinSize: '1'
