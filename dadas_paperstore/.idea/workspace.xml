@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d74fd151-a60a-4d02-82b9-069e5f0ead6a" name="Default Changelist" comment="" />
+    <list default="true" id="d74fd151-a60a-4d02-82b9-069e5f0ead6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/PaperCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/CreatePaperTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/CreatePaperTable.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -15,6 +30,7 @@
     </option>
   </component>
   <component name="ProjectId" id="29301adN8fl6tySWPquQCyh07ce" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +38,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -65,10 +83,15 @@
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="179" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1656247602583" />
-    <state x="319" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1656244414115">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1656996445509">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1656996445509" />
     <state x="319" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1656244414115" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1656871013377">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1280.800@0.0.1280.800" timestamp="1656871013377" />
     <state x="305" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1656255166390">
       <screen x="0" y="23" width="1280" height="721" />
     </state>

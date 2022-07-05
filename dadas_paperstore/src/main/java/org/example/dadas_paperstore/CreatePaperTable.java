@@ -30,7 +30,10 @@ public class CreatePaperTable {
 
     public static void main(String[] args) {
 
-        String tableName = args[0];
+        String tableName = "";
+        for(int i = 0;i < args.length;i++) {
+            tableName += args[i];
+        }
         System.out.println("Creating an Amazon DynamoDB table "+tableName);
 
         try {
