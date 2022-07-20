@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d74fd151-a60a-4d02-82b9-069e5f0ead6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/PaperCRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/AddPaperItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/UpdatePaperItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/CreatePaperTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/CreatePaperTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dadas_paperstore/PaperCRUD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aws-dynamodb-examples-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/aws-dynamodb-examples-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/dadas_paperstore/CreatePaperTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/dadas_paperstore/CreatePaperTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/dadas_paperstore/PaperCRUD$PaperItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/dadas_paperstore/PaperCRUD$PaperItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/dadas_paperstore/PaperCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/dadas_paperstore/PaperCRUD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,15 +95,15 @@
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="179" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1656247602583" />
-    <state x="319" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1656996445509">
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1658333715230">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1656996445509" />
-    <state x="319" y="216" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1656244414115" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1656871013377">
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1658333715230" />
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1657567141628" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1658244160710">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1280.800@0.0.1280.800" timestamp="1656871013377" />
+    <state width="600" height="424" key="javadoc.popup/0.0.1280.800@0.0.1280.800" timestamp="1658244160710" />
     <state x="305" y="68" width="670" height="676" key="search.everywhere.popup" timestamp="1656255166390">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
