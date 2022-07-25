@@ -62,20 +62,13 @@ public class CreatePaperTable {
                         AttributeDefinition.builder()
                                 .attributeName("Type")
                                 .attributeType(ScalarAttributeType.S)
-                                .build(),
-                        AttributeDefinition.builder()
-                                .attributeName("Price")
-                                .attributeType(ScalarAttributeType.N)
                                 .build())
                 .keySchema(
                         KeySchemaElement.builder()
                                 .attributeName("Type")
                                 .keyType(KeyType.HASH)
-                                .build(),
-                        KeySchemaElement.builder()
-                                .attributeName("Price")
-                                .keyType(KeyType.RANGE)
-                                .build())
+                                .build()
+                )
                 .provisionedThroughput(
                         ProvisionedThroughput.builder()
                                 .readCapacityUnits(10L)

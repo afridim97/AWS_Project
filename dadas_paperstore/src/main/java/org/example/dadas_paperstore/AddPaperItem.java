@@ -8,21 +8,16 @@ import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import static software.amazon.awssdk.enhanced.dynamodb.mapper.StaticAttributeTags.primaryPartitionKey;
-import static software.amazon.awssdk.enhanced.dynamodb.mapper.StaticAttributeTags.primarySortKey;
 
 public class AddPaperItem {
 
-        private static final TableSchema<Paper> TABLE_SCHEMA =
+        protected static final TableSchema<Paper> TABLE_SCHEMA =
                 StaticTableSchema.builder(Paper.class)
                         .newItemSupplier(Paper::new)
                         .addAttribute(String.class, a -> a.name("Type")
                                 .getter(Paper::getPaperType)
                                 .setter(Paper::setPaperType)
                                 .tags(primaryPartitionKey()))
-                        .addAttribute(Integer.class, a -> a.name("Price")
-                                .getter(Paper::getPrice)
-                                .setter(Paper::setPrice)
-                                .tags(primarySortKey()))
                         .build();
 
         public static void main(String[] args) {

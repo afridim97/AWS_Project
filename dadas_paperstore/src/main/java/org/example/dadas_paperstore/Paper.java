@@ -11,14 +11,11 @@ import java.time.Instant;
  * This class is used by the Enhanced Client examples.
  */
 
-@DynamoDbBean
 public class Paper {
 
     private String type;
     private int price;
 
-    @DynamoDbPartitionKey
-    @DynamoDbAttribute("Type")
     public String getPaperType() {
         return this.type;
     };
@@ -28,8 +25,6 @@ public class Paper {
         this.type = type;
     }
 
-    @DynamoDbSortKey
-    @DynamoDbAttribute("Price")
     public Integer getPrice() {
         return this.price;
     }
